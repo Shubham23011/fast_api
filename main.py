@@ -1,4 +1,5 @@
 from fastapi import FastAPI,Depends,HTTPException
+from mangum import Mangum
 from pydantic import BaseModel
 from typing import Annotated,List
 import models
@@ -8,6 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 
 app = FastAPI()
+handler = Mangum(app)
 
 origins = [
     'http://localhost:3000'
