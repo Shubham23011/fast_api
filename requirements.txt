@@ -1,0 +1,10 @@
+annotated-types==0.6.0
+fastapi==0.110.2
+mangum==0.17.0
+psycopg2-binary==2.9.9
+pydantic==2.7.1
+pydantic_core==2.18.2
+SQLAlchemy==2.0.30
+starlette==0.37.2
+typing_extensions==4.11.0
+uvicorn==0.29.0
